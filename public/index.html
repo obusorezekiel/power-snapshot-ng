@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Power Snapshot NG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <p class="eyebrow">ECS Express Mode demo · Nigeria</p>
+        <div class="title-row">
+          <img
+            id="flag"
+            class="flag hidden"
+            src="https://flagcdn.com/w80/ng.png"
+            alt="Nigeria flag"
+          />
+          <h1>Power Snapshot NG</h1>
+        </div>
+        <p class="subtitle">
+          Official Nigeria electricity indicators from the World Bank — fetched from a public API
+          and served from your container.
+        </p>
+      </header>
+
+      <section class="card" id="card">
+        <p class="loading" id="loading">Loading latest indicators…</p>
+        <div class="stat hidden" id="stat">
+          <p class="label" id="highlight-label">Access to electricity</p>
+          <p class="value" id="value">—</p>
+          <p class="unit" id="highlight-unit">% of population</p>
+          <div class="meta" id="meta"></div>
+          <p class="note" id="note"></p>
+        </div>
+        <p class="error hidden" id="error"></p>
+      </section>
+
+      <footer class="footer">
+        <p>
+          API: <code>/api/energy</code> · Health: <code>/api/health</code> · Port:
+          <code>80</code>
+        </p>
+      </footer>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>

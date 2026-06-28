@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(160deg, #0f172a 0%, #0c4a6e 100%);
+  color: #e2e8f0;
+}
+
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #7dd3fc;
+  margin-bottom: 0.75rem;
+}
+
+.header h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.flag {
+  width: 48px;
+  height: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.subtitle {
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.card {
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.loading,
+.error {
+  text-align: center;
+  color: #94a3b8;
+}
+
+.error {
+  color: #fca5a5;
+}
+
+.hidden {
+  display: none;
+}
+
+.stat {
+  text-align: center;
+}
+
+.label {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.value {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #f8fafc;
+  margin-bottom: 0.25rem;
+}
+
+.unit {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin-bottom: 1.5rem;
+}
+
+.meta {
+  display: grid;
+  gap: 0.75rem;
+  text-align: left;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  padding-top: 1.25rem;
+}
+
+.meta p {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+}
+
+.meta span {
+  color: #64748b;
+}
+
+.meta strong {
+  color: #e2e8f0;
+  font-weight: 500;
+  text-align: right;
+}
+
+.note {
+  margin-top: 1.25rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #64748b;
+  text-align: left;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
+  padding-top: 1rem;
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.footer code {
+  background: rgba(15, 23, 42, 0.6);
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.25rem;
+  color: #7dd3fc;
+}
